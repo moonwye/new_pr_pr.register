@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:id="@+id/scroll_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:id="@+id/Linear_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                android:text="Выберите аватар"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="105dp"
+                app:srcCompat="@drawable/profile"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.rey.material.widget.CheckBox
+                android:id="@+id/login_checkbox"
+                style="@style/Material.Drawable.CheckBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:text="Расширенная форма регистрации"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="bold"></com.rey.material.widget.CheckBox>
+
+            <EditText
+                android:id="@+id/fullName_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:padding="15dp"
+                android:layout_marginTop="20dp"
+                android:hint="Ф.И.О:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/linear_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/login_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textPersonName"
+                    android:padding="15dp"
+                    android:hint="Логин:"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/phone_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="phone"
+                    android:padding="15dp"
+                    android:hint="Номер телефона:"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/email_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp"
+                    android:hint="Почта:"
+                    android:textColor="@android:color/black"
+                    android:textColorHint="@android:color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/password_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button"
+                android:importantForAutofill="no"
+                android:layout_marginTop="20dp"
+                android:inputType="numberPassword"
+                android:padding="15dp"
+                android:hint="Введите пароль:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/password_user_repeat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/button"
+                android:layout_marginTop="20dp"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword"
+                android:padding="15dp"
+                android:hint="Подтвердите пароль:"
+                android:textColor="@android:color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/user_gender_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:hint="Мужской"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioButton
+                android:id="@+id/user_gender_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="48dp"
+                android:hint="Женский"
+                android:textColor="@color/black"
+                android:textColorHint="@android:color/black"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/reg_btn"
+                android:layout_width="198dp"
+                android:layout_height="72dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/button"
+                android:padding="20dp"
+                android:text="Регистрация"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

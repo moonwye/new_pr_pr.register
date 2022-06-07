@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/nav_name">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/main_menu"
+            android:title="Главное меню"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_calendar"
+            android:icon="@drawable/calendar_event"
+            android:title="Календарь событий"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_schedule"
+            android:icon="@drawable/schedule"
+            android:title="Расписание"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_journal"
+            android:icon="@drawable/journal_of_works"
+            android:title="Журнал работ"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_clients"
+            android:icon="@drawable/clients_and_contacts"
+            android:title="Клиенты и контакты"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_list"
+            android:icon="@drawable/list"
+            android:title="Список моих услуг"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/gallery_of_works"
+            android:title="Галерея работ"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_organizer"
+            android:icon="@drawable/organizer"
+            android:title="Органайзер"
+            android:iconTint="@color/white"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Настройки"
+            android:iconTint="@color/white"/>
+    </group>
+
+    <group>
+        <item
+            android:id="@+id/nav_instruction_app"
+            android:title="О приложении"
+
+            android:iconTint="@color/white"/>
+    </group>
+</menu>
