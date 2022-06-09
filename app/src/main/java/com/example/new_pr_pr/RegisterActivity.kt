@@ -15,12 +15,9 @@ class RegisterActivity : AppCompatActivity() {
     private lateinit var refUsers:DatabaseReference
     private var firebaseUserID : String = ""
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
-
-
 
         val spinner: Spinner = findViewById(R.id.planets_spinner)
 // Create an ArrayAdapter using the string array and a default spinner layout
@@ -120,7 +117,7 @@ class RegisterActivity : AppCompatActivity() {
                                 if (task.isSuccessful) {
                                     val regIntent = Intent(this, HomeActivity::class.java)
                                     startActivity(regIntent)
-                                    Toast.makeText(this,"Приятного использования <3",Toast.LENGTH_LONG).show()
+                                    Toast.makeText(this,"Приятного использования <3, не забудьте при следующем входе в аккаунт нажать кнопку запомнить меня)",Toast.LENGTH_LONG).show()
                                     finish()
 
                                 }

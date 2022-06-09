@@ -26,13 +26,13 @@
         app:layout_constraintVertical_bias="0.064"></TextView>
 
     <EditText
-        android:id="@+id/login_phone_input"
+        android:id="@+id/login_email_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:hint="Номер телефона:"
-        android:inputType="number"
+        android:hint="Адрес почты:"
+        android:inputType="textEmailAddress"
         android:padding="15dp"
         android:textColor="@color/black"
         android:textColorHint="@color/black"
@@ -49,10 +49,9 @@
         android:id="@+id/login_password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login_phone_input"
+        android:layout_below="@+id/login_email_input"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-
         android:hint="Пароль:"
         android:inputType="textPassword"
         android:padding="15dp"
