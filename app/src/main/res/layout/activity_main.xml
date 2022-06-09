@@ -4,18 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/text_logo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
         android:text="Добро пожаловать в приложение Удобство красоты"
         android:textAlignment="center"
-        android:textSize="22sp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
         android:textColor="@color/black"
+        android:textSize="22sp"
         android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/button"
         android:hint="Номер телефона:"
         android:inputType="number"
         android:padding="15dp"
@@ -52,7 +52,7 @@
         android:layout_below="@+id/login_phone_input"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/button"
+
         android:hint="Пароль:"
         android:inputType="textPassword"
         android:padding="15dp"
@@ -86,13 +86,13 @@
         app:layout_constraintVertical_bias="0.738"></Button>
 
     <Button
-        android:onClick="reg"
         android:id="@+id/reg_btn"
-        android:layout_width="198dp"
-        android:layout_height="72dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="@drawable/button"
+        android:onClick="reg"
         android:padding="20dp"
         android:text="Регистрация"
         android:textAllCaps="false"
@@ -104,7 +104,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.975"></Button>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
